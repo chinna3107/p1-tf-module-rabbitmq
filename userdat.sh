@@ -1,0 +1,5 @@
+#!/bin bash
+
+yum install  ansible -y >>/opt/userdata.log
+ansible-playbook -i localhost, https://github.com/chinna3107/p1-roboshop-ansible1.git main.yml -e component = ${component} >>/opt/userdata.log
+
