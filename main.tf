@@ -14,8 +14,8 @@ resource "aws_security_group" "main" {
 
   ingress {
     description = "rabbitmq"
-    from_port   = 22
-    to_port     = 22
+    from_port   = 5672
+    to_port     = 5672
     protocol    = "tcp"
     cidr_blocks = var.sg_ingress_cidr
   }
